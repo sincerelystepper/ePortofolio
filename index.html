@@ -1,41 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My E-Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Professional Engineering Identity</p>
+  <!-- HEADER -->
+  <header id="hero">
+    <nav>
+      <h1 class="logo">Your Name</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+      <p>Professional Engineering Identity</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Write about your journey, skills, and goals...</p>
+    <p>Write a short paragraph about who you are, your engineering journey, and your professional goals...</p>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Project Name</h3>
-      <p>Description of what you did...</p>
+    <h2>Projects & Artefacts</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 1">
+        <h3>Project Title</h3>
+        <p>Short description of the project and your role...</p>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2">
+        <h3>Project Title</h3>
+        <p>Short description of the project and your role...</p>
+      </div>
+      <div class="project-card">
+        <img src="images/project3.jpg" alt="Project 3">
+        <h3>Project Title</h3>
+        <p>Short description of the project and your role...</p>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: you@example.com</p>
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <p>Embedded Systems</p>
+      <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+    </div>
+    <div class="skill">
+      <p>PCB Design</p>
+      <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+    </div>
+    <div class="skill">
+      <p>Programming (C, Python, MATLAB)</p>
+      <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+    </div>
   </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p><i class="fa-solid fa-envelope"></i> youremail@example.com</p>
+    <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/yourname</p>
+    <p><i class="fa-brands fa-github"></i> github.com/yourusername</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
