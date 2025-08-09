@@ -1,31 +1,113 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f4f4;
+  background: #0A192F;
+  color: #CCD6F6;
 }
+
 header {
-  background: #003366;
-  color: white;
-  padding: 20px;
-  text-align: center;
+  height: 100vh;
+  background: #0A192F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 nav {
   display: flex;
-  justify-content: center;
-  background: #eee;
+  justify-content: space-between;
+  padding: 20px 40px;
 }
+
+.logo {
+  color: #64FFDA;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
 nav a {
-  padding: 10px;
+  color: #CCD6F6;
   text-decoration: none;
-  color: #333;
+  transition: color 0.3s;
 }
+
+nav a:hover {
+  color: #64FFDA;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+}
+
+.highlight {
+  color: #64FFDA;
+}
+
+.btn {
+  background: #64FFDA;
+  color: #0A192F;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
 section {
-  padding: 20px;
+  padding: 60px 40px;
 }
+
+h2 {
+  color: #64FFDA;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
 .project-card {
-  background: white;
+  background: #112240;
   padding: 15px;
   border-radius: 10px;
-  margin: 10px 0;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.progress {
+  background: #233554;
+  border-radius: 5px;
+  height: 10px;
+}
+
+.progress-bar {
+  background: #64FFDA;
+  height: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  background: #112240;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
 }
